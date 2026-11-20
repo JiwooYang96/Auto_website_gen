@@ -83,6 +83,17 @@ how many past designs to avoid repeating).
 - Scraping lead data
 - Sending emails (Harvey/Sellbird handles this)
 
+## Studio landing page
+
+`studio-site/index.html` is the landing page for the studio itself: the link to put in
+cold emails. One self-contained file (fonts and screenshots built in). Before you
+publish it:
+
+- set your studio name (`STUDIO`) and email (`STUDIO_EMAIL`) at the top of the page's
+  script and in `studio.json`; "Already Built" is a working name
+- the request form opens the visitor's email app addressed to you, so it needs no server
+- `before-mock.html` is the made-up "before" site used in the comparison slider
+
 ## Skills included
 
 | Skill | Used for | Source and license |

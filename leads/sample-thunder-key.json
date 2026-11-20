@@ -1,0 +1,40 @@
+{
+  "slug": "sample-thunder-key",
+  "business_name": "Thunder Key Powerboat Rides",
+  "category": "Powerboat thrill rides",
+  "owner_name": "Captain Rey Alvarez",
+  "city": "Miami, FL",
+  "address": "401 Biscayne Blvd, Dock C, Miami, FL 33132",
+  "phone": "(305) 555-0147",
+  "hours": {
+    "Every day": "10am - 7pm",
+    "Last ride": "6pm"
+  },
+  "services": [
+    "30-minute thrill ride",
+    "60-minute Biscayne Bay run",
+    "Private boat for up to 8 people"
+  ],
+  "prices": {
+    "30-minute thrill ride, per person": "$79",
+    "60-minute Biscayne Bay run, per person": "$129",
+    "Private boat, per hour": "$650"
+  },
+  "details": [
+    "Rides reach 60 mph on open water",
+    "Rides leave on the hour",
+    "Ages 6 and up; riders under 16 come with an adult",
+    "Life jackets and ponchos provided"
+  ],
+  "story": "Captain Rey Alvarez raced offshore powerboats before he started giving rides out of Biscayne Bay.",
+  "reviews": [
+    {
+      "author": "Google reviewer",
+      "text": "We hit 60 on the bay and couldn't stop laughing."
+    }
+  ],
+  "photos": [],
+  "status": "needs_review",
+  "_note": "Fictional sample business for the portfolio. Not a real company.",
+  "check_problems": []
+}
