@@ -95,10 +95,17 @@ how many past designs to avoid repeating).
 | seo | Search basics for final, paid sites | addyosmani/web-quality-skills, MIT |
 | schema | LocalBusiness structured data for final sites | coreyhaines31/marketingskills, MIT |
 | cold-email | Writing outreach emails and follow-ups | coreyhaines31/marketingskills, MIT |
+| image-to-code | Building a site from a flyer, mockup or screenshot you provide | Leonxlnx/imagegen-skills, MIT |
+| design-md | Using the reference library and writing a DESIGN.md per client | written for this repo |
+
+`design-references/` holds 84 DESIGN.md files extracted from real brands' public
+sites (VoltAgent/awesome-design-md, MIT). They're for studying craft, not for copying
+a brand onto a client; the brands' identities belong to their owners.
 
 `CLAUDE.md` says when each one is used. Each skill folder keeps its original license
 file. Copied from anthropics/skills@e4bb5d9, addyosmani/web-quality-skills@afa8da9 and
-coreyhaines31/marketingskills@5b2b400; to update one, replace its folder with the
+coreyhaines31/marketingskills@5b2b400, Leonxlnx/imagegen-skills@beb16b0 and
+VoltAgent/awesome-design-md@fcc7028; to update one, replace its folder with the
 newer version from that repo.
 
 To turn a paid concept into the live site, ask Claude: "finalize <slug>".

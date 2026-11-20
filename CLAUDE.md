@@ -23,6 +23,18 @@ Only when a client has paid and the site goes live (see "Final site" below):
 - `seo`: titles, meta descriptions, headings, local search basics.
 - `schema`: LocalBusiness JSON-LD built only from lead-file facts.
 
+Only when a starting image exists:
+- `image-to-code`: build from an image the user provides (a client's flyer, a
+  mockup from an image tool, a screenshot of their current site). Claude Code can't
+  generate images, so skip the skill's "generate the image first" step. Copy the
+  image's look, but take every fact (names, prices, hours, phone) from the lead
+  file only: text read off an image is never a source of facts.
+
+Design references and per-client systems:
+- `design-md`: the 84 brand DESIGN.md files in `design-references/` are for
+  studying craft only, never for copying a brand onto a client. When finalizing,
+  write a DESIGN.md for the client (see that skill).
+
 Outreach, not site building:
 - `cold-email`: when asked to write or improve the outreach emails and follow-ups.
 
@@ -76,4 +88,5 @@ and in the copy:
 - apply the `seo` skill (title, meta description, one h1, local search basics)
 - add LocalBusiness JSON-LD with the `schema` skill, using lead-file facts only
 - re-run the `accessibility` checks
+- write `sites/<slug>/final/DESIGN.md` with the `design-md` skill
 Never change the concept file itself.
