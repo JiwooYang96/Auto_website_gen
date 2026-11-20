@@ -41,6 +41,11 @@ Design references and per-client systems:
 Outreach, not site building:
 - `cold-email`: when asked to write or improve the outreach emails and follow-ups.
 
+Growing the toolkit:
+- `find-skills`: when asked to find or add a skill. Follow its "Project rules"
+  section: ask before installing, read the files first, MIT/Apache only, install
+  into this project's `.claude/skills/` (never globally, never with `-y`).
+
 ## Before designing
 1. Read `.claude/skills/frontend-design/SKILL.md` and follow it fully: plan, review
    the plan against the brief, build, then critique with screenshots. Use the
