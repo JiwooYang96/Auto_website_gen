@@ -1,0 +1,40 @@
+{
+  "slug": "sample-lucky-gator",
+  "business_name": "Lucky Gator Airboat Tours",
+  "category": "Airboat tours",
+  "owner_name": "Captain Del Ruiz",
+  "city": "Everglades, FL",
+  "address": "40100 Tamiami Trail, Everglades, FL 34139",
+  "phone": "(305) 555-0173",
+  "hours": {
+    "Every day": "9am - 5pm"
+  },
+  "services": [
+    "45-minute airboat ride, leaves every 30 minutes",
+    "90-minute sunset ride, leaves 90 minutes before sunset",
+    "Private airboat for up to 6 people"
+  ],
+  "prices": {
+    "45-minute ride, adult": "$49",
+    "45-minute ride, child under 12": "$29",
+    "90-minute sunset ride": "$89",
+    "Private airboat, per hour": "$420"
+  },
+  "details": [
+    "Captains stop the boat whenever there's wildlife to see",
+    "Ear protection is provided",
+    "Rides run rain or shine, and pause for lightning",
+    "Free parking"
+  ],
+  "story": "Captain Del Ruiz has run airboats on this stretch of the Tamiami Trail since he bought his first boat, Lucky, which still runs the morning tours.",
+  "reviews": [
+    {
+      "author": "Google reviewer",
+      "text": "Saw four gators and a roseate spoonbill in the first ten minutes."
+    }
+  ],
+  "photos": [],
+  "status": "needs_review",
+  "_note": "Fictional sample business for the portfolio. Not a real company.",
+  "check_problems": []
+}
