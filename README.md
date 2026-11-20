@@ -95,6 +95,7 @@ how many past designs to avoid repeating).
 | seo | Search basics for final, paid sites | addyosmani/web-quality-skills, MIT |
 | schema | LocalBusiness structured data for final sites | coreyhaines31/marketingskills, MIT |
 | cold-email | Writing outreach emails and follow-ups | coreyhaines31/marketingskills, MIT |
+| web-design-guidelines | Final review against Vercel's interface rules (rules saved locally) | vercel-labs/agent-skills + web-interface-guidelines, MIT |
 | image-to-code | Building a site from a flyer, mockup or screenshot you provide | Leonxlnx/imagegen-skills, MIT |
 | design-md | Using the reference library and writing a DESIGN.md per client | written for this repo |
 

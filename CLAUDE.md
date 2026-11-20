@@ -18,6 +18,9 @@ Every concept site:
 - `performance`: keep the page light. Single file, no heavy scripts, sensible fonts.
 - `webapp-testing`: Playwright patterns for anything `autosite.py shoot` doesn't
   cover (checking a click, mobile menu, console errors).
+- `web-design-guidelines`: final review against Vercel's interface rules before
+  you finish. Fix what it finds. Exception: headings and buttons stay in sentence
+  case (frontend-design wins over its "Title Case" rule).
 
 Only when a client has paid and the site goes live (see "Final site" below):
 - `seo`: titles, meta descriptions, headings, local search basics.
