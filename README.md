@@ -83,7 +83,22 @@ how many past designs to avoid repeating).
 - Scraping lead data
 - Sending emails (Harvey/Sellbird handles this)
 
-## Credits
+## Skills included
 
-`.claude/skills/frontend-design` is Anthropic's frontend-design skill, used under the
-Apache License 2.0 (see its `LICENSE.txt`).
+| Skill | Used for | Source and license |
+|---|---|---|
+| frontend-design | Distinctive design for every site | anthropics/skills, Apache 2.0 |
+| webapp-testing | Browser testing and screenshots with Playwright | anthropics/skills, Apache 2.0 |
+| copywriting | Page copy built from real facts | coreyhaines31/marketingskills, MIT |
+| accessibility | WCAG checks (contrast, focus, headings) | addyosmani/web-quality-skills, MIT |
+| performance | Keeping pages fast and light | addyosmani/web-quality-skills, MIT |
+| seo | Search basics for final, paid sites | addyosmani/web-quality-skills, MIT |
+| schema | LocalBusiness structured data for final sites | coreyhaines31/marketingskills, MIT |
+| cold-email | Writing outreach emails and follow-ups | coreyhaines31/marketingskills, MIT |
+
+`CLAUDE.md` says when each one is used. Each skill folder keeps its original license
+file. Copied from anthropics/skills@e4bb5d9, addyosmani/web-quality-skills@afa8da9 and
+coreyhaines31/marketingskills@5b2b400; to update one, replace its folder with the
+newer version from that repo.
+
+To turn a paid concept into the live site, ask Claude: "finalize <slug>".

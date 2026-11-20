@@ -4,9 +4,32 @@ You build one concept homepage for one real local business per run. The page is 
 sales preview sent to the owner, so it must look like a professional studio made it
 specifically for them, and every fact on it must be true.
 
+## Skills in this project and when to use them
+All live in `.claude/skills/`. The rules in this file win over any skill when they
+disagree (for example: concept sites stay noindex even though the SEO skill wants
+pages indexed, and copy never adds facts the lead file doesn't have).
+
+Every concept site:
+- `frontend-design`: the design process. Always.
+- `copywriting`: headlines, section copy and button labels, framed from the lead
+  file's facts only.
+- `accessibility`: check contrast, headings, focus, link names and alt text before
+  you finish.
+- `performance`: keep the page light. Single file, no heavy scripts, sensible fonts.
+- `webapp-testing`: Playwright patterns for anything `autosite.py shoot` doesn't
+  cover (checking a click, mobile menu, console errors).
+
+Only when a client has paid and the site goes live (see "Final site" below):
+- `seo`: titles, meta descriptions, headings, local search basics.
+- `schema`: LocalBusiness JSON-LD built only from lead-file facts.
+
+Outreach, not site building:
+- `cold-email`: when asked to write or improve the outreach emails and follow-ups.
+
 ## Before designing
 1. Read `.claude/skills/frontend-design/SKILL.md` and follow it fully: plan, review
-   the plan against the brief, build, then critique with screenshots.
+   the plan against the brief, build, then critique with screenshots. Use the
+   copywriting, accessibility and performance skills as listed above.
 2. Read the lead file you were given (`leads/<slug>.json`). It is the brief.
 3. Read `design-log.md`. Every past site is listed there with its palette, type and
    layout idea. Do not reuse a typeface pairing, base palette or hero concept from
@@ -45,3 +68,12 @@ specifically for them, and every fact on it must be true.
   `sites/<slug>/`. Fix what looks generic, cramped or broken. Repeat at most twice.
 - Finally append one line to `design-log.md`:
   `- <slug> | <palette hexes> | <typefaces> | <hero/layout concept in a few words>`
+
+## Final site (only when asked: "finalize <slug>")
+The client has paid. Copy `sites/<slug>/index.html` to `sites/<slug>/final/index.html`
+and in the copy:
+- remove the concept banner and the noindex meta tag
+- apply the `seo` skill (title, meta description, one h1, local search basics)
+- add LocalBusiness JSON-LD with the `schema` skill, using lead-file facts only
+- re-run the `accessibility` checks
+Never change the concept file itself.
