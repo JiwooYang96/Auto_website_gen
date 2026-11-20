@@ -1,0 +1,40 @@
+{
+  "slug": "sample-sun-drive",
+  "business_name": "Sun Drive Convertible Rentals",
+  "category": "Convertible car rental",
+  "owner_name": "Marisol Vega",
+  "city": "Miami Beach, FL",
+  "address": "1100 Collins Ave, Miami Beach, FL 33139",
+  "phone": "(305) 555-0129",
+  "hours": {
+    "Every day": "8am - 8pm"
+  },
+  "services": [
+    "4-seat convertible",
+    "2-seat roadster",
+    "1980s classic convertible",
+    "Delivery to Miami Beach hotels"
+  ],
+  "prices": {
+    "4-seat convertible, per day": "$129",
+    "2-seat roadster, per day": "$189",
+    "1980s classic convertible, per day": "$249",
+    "Hotel delivery": "$25"
+  },
+  "details": [
+    "Unlimited miles within Florida",
+    "Beach towels and a cooler come with every car",
+    "Drivers must be 25 or older with a valid license and a credit card"
+  ],
+  "story": "Marisol Vega started Sun Drive with two convertibles and a parking lot on Collins Avenue.",
+  "reviews": [
+    {
+      "author": "Google reviewer",
+      "text": "Top down on Ocean Drive at sunset. Easiest rental counter we've used."
+    }
+  ],
+  "photos": [],
+  "status": "needs_review",
+  "_note": "Fictional sample business for the portfolio. Not a real company.",
+  "check_problems": []
+}
