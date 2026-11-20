@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Harbor Street Bakery, Portland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --flour:#F4F5F2;
+    --harbor:#1D2F4B;
+    --crust:#9C4F1E;
+    --morning:#F0B43C;
+    --rye:#DCD3C3;
+    --slab:"Zilla Slab", Rockwell, Georgia, serif;
+    --body:"Atkinson Hyperlegible", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--flour);color:var(--harbor);font:400 1.0625rem/1.6 var(--body)}
+  a{color:inherit}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--morning);outline-offset:3px;border-radius:2px}
+  .wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+
+  /* top bar */
+  .top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem}
+  .name{font:700 1.25rem/1 var(--slab);text-decoration:none}
+  .top a.call{font-weight:700;text-decoration:none;border-bottom:2px solid var(--rye)}
+  .top a.call:hover{border-color:var(--crust)}
+
+  /* hero */
+  .hero{padding:4.5rem 0 3rem}
+  h1{font:700 clamp(3rem,9vw,7.5rem)/.92 var(--slab);letter-spacing:-.02em;margin:0;max-width:11ch}
+  .lede{font-size:1.25rem;max-width:34rem;margin:1.75rem 0 0}
+
+  /* the Saturday timeline: the one bold thing */
+  .day{margin:3.5rem 0 0;padding:2rem 0 0;border-top:2px solid var(--harbor)}
+  .day h2{font:500 1rem/1.3 var(--body);margin:0 0 1.25rem;color:var(--crust)}
+  .track{position:relative;height:5.5rem}
+  .rail{position:absolute;left:0;right:0;top:1.1rem;height:.5rem;background:var(--rye);border-radius:.25rem}
+  .bread{position:absolute;left:0;top:1.1rem;height:.5rem;width:var(--to);background:var(--crust);border-radius:.25rem;transform-origin:left;animation:bake 2.4s cubic-bezier(.6,.05,.3,1) .4s both}
+  @keyframes bake{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes bake-down{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+  .mark{position:absolute;top:0;transform:translateX(-50%);text-align:center;width:9rem}
+  .mark.start{transform:none;text-align:left}
+  .mark.end{transform:translateX(-100%);text-align:right}
+  .dot{display:block;width:1.6rem;height:1.6rem;margin:.55rem auto 0;border-radius:50%;background:var(--flour);border:.3rem solid var(--harbor);position:relative;top:-.55rem}
+  .mark.start .dot{margin-left:-.2rem;background:var(--morning);border-color:var(--morning)}
+  .mark.end .dot{margin-right:-.2rem;margin-left:auto}
+  .mark.out .dot{background:var(--crust);border-color:var(--crust)}
+  .time{display:block;font:700 1.375rem/1.1 var(--slab)}
+  .what{display:block;font-size:.9375rem;line-height:1.3}
+  .ctas{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;margin-top:2.75rem}
+  .btn{display:inline-block;background:var(--harbor);color:var(--flour);text-decoration:none;font-weight:700;padding:.95rem 1.5rem;border-radius:.35rem}
+  .btn:hover{background:var(--crust)}
+  .ctas .plain{font-weight:700}
+
+  /* body sections */
+  section.block{padding:4.5rem 0;border-top:1px solid var(--rye)}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:2rem 4rem}
+  h3{font:700 clamp(1.75rem,3.5vw,2.5rem)/1.05 var(--slab);margin:0}
+  .bakes{list-style:none;margin:0;padding:0}
+  .bakes li{display:flex;justify-content:space-between;gap:1.5rem;padding:1rem 0;border-bottom:1px solid var(--rye);font-size:1.125rem}
+  .bakes li:first-child{padding-top:0}
+  .price{font:700 1.125rem var(--slab);color:var(--crust);white-space:nowrap}
+  .note{margin:1.25rem 0 0;max-width:36rem}
+  .story p{margin:0 0 1rem;max-width:36rem;font-size:1.125rem}
+
+  .cake{background:var(--harbor);color:var(--flour);border-radius:.5rem;padding:3rem;display:grid;grid-template-columns:minmax(0,1.4fr) auto;gap:1.5rem 3rem;align-items:center}
+  .cake h3{color:var(--flour)}
+  .cake p{margin:.75rem 0 0;max-width:32rem}
+  .cake .btn{background:var(--morning);color:var(--harbor)}
+  .cake .btn:hover{background:var(--flour)}
+
+  .hours{border-collapse:collapse;font-size:1.125rem;min-width:18rem}
+  .hours th{text-align:left;font-weight:400;padding:.6rem 2.5rem .6rem 0;border-bottom:1px solid var(--rye)}
+  .hours td{font-weight:700;padding:.6rem 0;border-bottom:1px solid var(--rye)}
+  .hours tr.closed td{font-weight:400;color:#5d6675}
+  .visit{display:grid;grid-template-columns:auto 1fr;gap:2rem 4rem;align-items:start}
+  address{font-style:normal;font-size:1.125rem}
+  address a{font-weight:700}
+
+  blockquote{margin:0;font:500 clamp(1.5rem,3.2vw,2.25rem)/1.25 var(--slab);max-width:30ch}
+  blockquote footer{font:400 1rem var(--body);margin-top:1rem;color:#5d6675}
+
+  footer.site{padding:2.5rem 0 3rem;border-top:1px solid var(--rye);font-size:.9375rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between}
+
+  #concept-banner{background:var(--harbor);color:var(--flour);font-size:.8125rem;text-align:center;padding:.5rem 1rem}
+
+  @media (max-width:760px){
+    .hero{padding:2.5rem 0 2rem}
+    .lede{font-size:1.125rem}
+    /* timeline turns vertical on phones */
+    .track{height:auto;padding-left:2.5rem}
+    .rail{left:.55rem;right:auto;top:.6rem;bottom:2.2rem;width:.5rem;height:auto}
+    .bread{left:.55rem;top:.6rem;width:.5rem;height:calc(50% - 1rem);animation-name:bake-down;transform-origin:top}
+    .mark,.mark.start,.mark.end{position:relative;left:auto!important;transform:none;text-align:left;width:auto;display:block;padding:0 0 1.5rem}
+    .mark .dot,.mark.start .dot,.mark.end .dot{position:absolute;left:-2.5rem;top:0;margin:0}
+    .time{font-size:1.25rem}
+    .cols,.visit{grid-template-columns:1fr}
+    section.block{padding:3rem 0}
+    .cake{grid-template-columns:1fr;padding:2rem 1.5rem}
+    .hours{min-width:0;width:100%}
+  }
+  @media (prefers-reduced-motion:reduce){.bread{animation:none}}
+</style>
+</head>
+<body>
+<div id="concept-banner">Concept design for Harbor Street Bakery by Your Studio. Not the official website.</div>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="#">Harbor Street Bakery</a>
+    <a class="call" href="tel:+15035550142">(503) 555-0142</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Saturday is bread day.</h1>
+      <p class="lede">Rosa bakes naturally leavened sourdough for the neighborhood on Harbor Street. The first loaves come out at 7am and usually sell out by noon.</p>
+
+      <div class="day" aria-labelledby="day-h">
+        <h2 id="day-h">A Saturday at the bakery</h2>
+        <div class="track" style="--to:71.4%">
+          <span class="rail"></span>
+          <span class="bread" aria-hidden="true"></span>
+          <!-- 7am to 2pm is 7 hours; noon sits at 5/7 = 71.4% -->
+          <span class="mark start" style="left:0"><span class="dot"></span><span class="time">7am</span><span class="what">First loaves out</span></span>
+          <span class="mark out" style="left:71.4%"><span class="dot"></span><span class="time">Noon</span><span class="what">Usually sold out</span></span>
+          <span class="mark end" style="left:100%"><span class="dot"></span><span class="time">2pm</span><span class="what">Doors close</span></span>
+        </div>
+      </div>
+
+      <div class="ctas">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=1420+SE+Harbor+St,+Portland,+OR+97214">Get directions</a>
+        <a class="plain" href="tel:+15035550142">Call the bakery</a>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="bakes-h">
+      <div class="cols">
+        <h3 id="bakes-h">What we bake</h3>
+        <div>
+          <ul class="bakes">
+            <li><span>Country sourdough loaf</span><span class="price">$11</span></li>
+            <li><span>Morning bun</span><span class="price">$5</span></li>
+            <li><span>Seasonal fruit galettes</span></li>
+            <li><span>Coffee and espresso</span></li>
+          </ul>
+          <p class="note">Sourdough is baked every Saturday. Morning buns, galettes and coffee are on the counter whenever we're open.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="cake-h">
+      <div class="cake">
+        <div>
+          <h3 id="cake-h">Whole cakes, made to order</h3>
+          <p>Call at least 3 days ahead and we'll have yours ready to pick up.</p>
+        </div>
+        <a class="btn" href="tel:+15035550142">Call to order a cake</a>
+      </div>
+    </section>
+
+    <section class="block story" aria-labelledby="story-h">
+      <div class="cols">
+        <h3 id="story-h">From Rosa's kitchen</h3>
+        <div>
+          <p>Rosa started baking sourdough in her home kitchen and opened the shop on Harbor Street to share it with the neighborhood.</p>
+          <blockquote>
+            <p style="margin:0;font:inherit">The Saturday sourdough is worth setting an alarm for.</p>
+            <footer>Google review</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="visit-h">
+      <div class="cols">
+        <h3 id="visit-h">Hours and visit</h3>
+        <div class="visit">
+          <table class="hours">
+            <tbody>
+              <tr><th scope="row">Tuesday to Friday</th><td>7am to 3pm</td></tr>
+              <tr><th scope="row">Saturday</th><td>7am to 2pm</td></tr>
+              <tr class="closed"><th scope="row">Sunday and Monday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <address>
+            1420 SE Harbor St<br>Portland, OR 97214<br><br>
+            <a href="tel:+15035550142">(503) 555-0142</a><br>
+            <a href="mailto:hello@harborstreetbakery.example">hello@harborstreetbakery.example</a>
+          </address>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <span>Harbor Street Bakery, Portland, OR</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=1420+SE+Harbor+St,+Portland,+OR+97214">1420 SE Harbor St</a>
+  </footer>
+</div>
+
+</body>
+</html>

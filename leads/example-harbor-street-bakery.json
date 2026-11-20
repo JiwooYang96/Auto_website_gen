@@ -1,0 +1,42 @@
+{
+  "slug": "example-harbor-street-bakery",
+  "business_name": "Harbor Street Bakery",
+  "category": "Bakery",
+  "owner_name": "Rosa",
+  "city": "Portland, OR",
+  "address": "1420 SE Harbor St, Portland, OR 97214",
+  "phone": "(503) 555-0142",
+  "email": "hello@harborstreetbakery.example",
+  "hours": {
+    "Tue-Fri": "7am - 3pm",
+    "Sat": "7am - 2pm",
+    "Sun-Mon": "Closed"
+  },
+  "services": [
+    "Naturally leavened sourdough, baked every Saturday",
+    "Morning buns and seasonal fruit galettes",
+    "Whole cakes to order with 3 days notice",
+    "Coffee and espresso"
+  ],
+  "prices": {
+    "Country sourdough loaf": "$11",
+    "Morning bun": "$5"
+  },
+  "story": "Rosa started baking sourdough in her home kitchen and opened the shop on Harbor Street to share it with the neighborhood. Saturday is bread day: the first loaves come out at 7am and usually sell out by noon.",
+  "reviews": [
+    {
+      "author": "Google reviewer",
+      "text": "The Saturday sourdough is worth setting an alarm for."
+    }
+  ],
+  "photos": [],
+  "existing_site": "https://harborstreetbakery.example",
+  "signals": [
+    "No online ordering",
+    "Site not mobile friendly",
+    "Hours not listed on site"
+  ],
+  "status": "needs_review",
+  "_note": "Fictional example lead. Replace with real scraped data. Every field here is treated as true by the builder.",
+  "check_problems": []
+}
