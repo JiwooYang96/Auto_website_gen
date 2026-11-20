@@ -3,3 +3,5 @@ __pycache__/
 sites/*/build.log
 review/
 .venv/
+.impeccable/config.local.json
+.claude/skills/impeccable/scripts/bin/

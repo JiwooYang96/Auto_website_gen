@@ -21,6 +21,15 @@ Every concept site:
 - `web-design-guidelines`: final review against Vercel's interface rules before
   you finish. Fix what it finds. Exception: headings and buttons stay in sentence
   case (frontend-design wins over its "Title Case" rule).
+- `emil-design-eng`: polish pass on details (easing, timing, button feedback,
+  focus and hover states) once the design works.
+- `review-animations`: check the page's one orchestrated motion moment against its
+  craft bar before you finish; remove motion it says doesn't earn its place.
+- `impeccable`: extra critique and audit pass (`critique`, `audit`, `polish`) on a
+  finished concept. Its fact rule matches ours: never add claims. Leave its hooks
+  off (don't run `hooks on`) unless the user asks. Its engine downloads a compiled
+  program to `~/.impeccable` on first run; if that fails or is blocked, follow its
+  "Launcher unavailable" fallback and use the guides in `reference/` only.
 
 Only when a client has paid and the site goes live (see "Final site" below):
 - `seo`: titles, meta descriptions, headings, local search basics.
@@ -40,6 +49,12 @@ Design references and per-client systems:
 
 Outreach, not site building:
 - `cold-email`: when asked to write or improve the outreach emails and follow-ups.
+
+Learning the user's taste:
+- `learn-taste`: when the user corrects a design ("too busy", "bigger headline",
+  "I don't like that font"), turn the correction into a rule with its reason and
+  save it in a project skill at `.claude/skills/studio-taste/SKILL.md`, so every
+  later site follows it. Facts and required-page rules in this file still win.
 
 Growing the toolkit:
 - `find-skills`: when asked to find or add a skill. Follow its "Project rules"

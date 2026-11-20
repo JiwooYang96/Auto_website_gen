@@ -96,6 +96,10 @@ how many past designs to avoid repeating).
 | schema | LocalBusiness structured data for final sites | coreyhaines31/marketingskills, MIT |
 | cold-email | Writing outreach emails and follow-ups | coreyhaines31/marketingskills, MIT |
 | web-design-guidelines | Final review against Vercel's interface rules (rules saved locally) | vercel-labs/agent-skills + web-interface-guidelines, MIT |
+| impeccable | Extra critique, audit and polish pass with a design detector (downloads its engine to ~/.impeccable on first run) | pbakaus/impeccable, Apache 2.0 |
+| emil-design-eng | Design-engineering polish: easing, timing, button and state details | emilkowalski/skills, MIT |
+| review-animations | Reviews each page's load animation against a high craft bar | emilkowalski/skills, MIT |
+| learn-taste | Turns your design corrections into saved rules for later sites | emilkowalski/skills, MIT |
 | find-skills | Finding and vetting new skills before they are added here | vercel-labs/skills, MIT |
 | image-to-code | Building a site from a flyer, mockup or screenshot you provide | Leonxlnx/imagegen-skills, MIT |
 | design-md | Using the reference library and writing a DESIGN.md per client | written for this repo |
@@ -107,7 +111,8 @@ a brand onto a client; the brands' identities belong to their owners.
 `CLAUDE.md` says when each one is used. Each skill folder keeps its original license
 file. Copied from anthropics/skills@e4bb5d9, addyosmani/web-quality-skills@afa8da9 and
 coreyhaines31/marketingskills@5b2b400, Leonxlnx/imagegen-skills@beb16b0,
-VoltAgent/awesome-design-md@fcc7028 and vercel-labs/skills@57217cf; to update one, replace its folder with the
+VoltAgent/awesome-design-md@fcc7028, vercel-labs/skills@57217cf,
+pbakaus/impeccable@b49177d and emilkowalski/skills@64eb3de; to update one, replace its folder with the
 newer version from that repo.
 
 To turn a paid concept into the live site, ask Claude: "finalize <slug>".
